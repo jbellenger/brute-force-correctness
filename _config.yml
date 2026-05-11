@@ -1,0 +1,9 @@
+title: Brute Force Correctness
+description: Links and references from James Bellenger's GraphQL Conf 2026 talk.
+url: "https://jbellenger.github.io"
+baseurl: "/brute-force-correctness"
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md

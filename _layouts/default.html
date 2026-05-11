@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description | escape }}">
+    <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #f8f7f2;
+        --panel: #ffffff;
+        --text: #161616;
+        --muted: #5f6268;
+        --rule: #d9d5ca;
+        --accent: #c93364;
+        --accent-strong: #8d2147;
+        --code-bg: #efede6;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #111114;
+          --panel: #191a1f;
+          --text: #f3f1ea;
+          --muted: #b7b3aa;
+          --rule: #33343a;
+          --accent: #ff6f9d;
+          --accent-strong: #ff9aba;
+          --code-bg: #272830;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--text);
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.55;
+      }
+
+      main {
+        width: min(100% - 2rem, 46rem);
+        margin: 0 auto;
+        padding: 4rem 0 5rem;
+      }
+
+      header {
+        margin-bottom: 2.5rem;
+        border-bottom: 1px solid var(--rule);
+        padding-bottom: 1.5rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.15;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        margin: 0 0 0.75rem;
+        font-size: clamp(2.25rem, 8vw, 4.5rem);
+      }
+
+      h2 {
+        margin-top: 2.5rem;
+        padding-top: 0.25rem;
+        font-size: 1.45rem;
+      }
+
+      p {
+        margin: 0 0 1rem;
+      }
+
+      .lede {
+        color: var(--muted);
+        font-size: 1.1rem;
+        max-width: 38rem;
+      }
+
+      a {
+        color: var(--accent);
+        font-weight: 650;
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.18em;
+      }
+
+      a:hover,
+      a:focus-visible {
+        color: var(--accent-strong);
+      }
+
+      ul {
+        margin: 0 0 1.4rem;
+        padding-left: 1.2rem;
+      }
+
+      li {
+        margin: 0.45rem 0;
+      }
+
+      code {
+        border-radius: 0.25rem;
+        background: var(--code-bg);
+        padding: 0.12rem 0.3rem;
+        font-size: 0.94em;
+      }
+
+      footer {
+        margin-top: 3rem;
+        border-top: 1px solid var(--rule);
+        padding-top: 1rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>{{ page.title | default: site.title | escape }}</h1>
+        {% if page.description %}
+          <p class="lede">{{ page.description }}</p>
+        {% endif %}
+      </header>
+
+      {{ content }}
+
+      <footer>
+        <p>GraphQL Conf 2026</p>
+      </footer>
+    </main>
+  </body>
+</html>
