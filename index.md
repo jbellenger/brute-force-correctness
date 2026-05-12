@@ -1,26 +1,19 @@
 ---
 layout: default
 title: Brute Force Correctness
-description: Links and references from James Bellenger's GraphQL Conf 2026 talk.
+description: Links, addenda, and colophon from my talk at GraphQL Conf
 ---
 
-## Talk Links
+## Links
 
-- [GraphQL Specification](https://spec.graphql.org/)
-- [GraphQL Conformance](https://github.com/graphql/graphql-js/tree/main/src/__tests__)
-- [GraphQL.js](https://github.com/graphql/graphql-js)
+- [GraphQL Conformance](https://github.com/jbellenger/graphql-conformance)
+  Tests spec conformance across the GraphQL ecosystem
+  
+- [Viaduct Arbitrary](https://github.com/airbnb/viaduct/tree/main/core/shared/arbitrary) ([maven](https://mvnrepository.com/artifact/com.airbnb.viaduct/shared-arbitrary))
+  A fuzzer used to productionize Viaduct and also in GraphQL Conformance
+  
+- [Brute Force Correctness slides](http://graphqlconf-26.s3-website-us-west-2.amazonaws.com/)
+  My presentation slides
 
-## Topics
-
-- Brute force correctness
-- Test generation
-- Fuzzing
-- Conformance suites
-
-## More From Me
-
-- [GitHub](https://github.com/jbellenger)
-
-## Updates
-
-This page is intentionally tiny and static. The links above can be edited directly in `index.md`.
+## Colophon
+The slides I presented were authored in Blender and presented with [Holodeck](https://github.com/jbellenger/holodeck), a tool that I built specifically for this talk.
