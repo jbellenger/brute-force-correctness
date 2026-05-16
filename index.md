@@ -10,7 +10,7 @@ description: Links, addenda, and colophon from my talk at GraphQL Conf
   A system for testing conformance to the GraphQL spec.
 <br>
 
-- [Brute Force Correctness slides](http://graphqlconf-26.s3-website-us-west-2.amazonaws.com/)
+- [Brute Force Correctness slides](https://bfc.bellenger.org/)
   A "slide deck" for my talk given at GraphQL Conf 2026.
 <br>
   
